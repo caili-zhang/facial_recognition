@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import cv2
-import jatts
+from speech_api import jatts
 import time
 detector=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
