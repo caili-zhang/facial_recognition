@@ -10,9 +10,10 @@
 
 !.gitignore
 
+*.flac
+*.avi
 *.jpg
 *.mp3
 dataSet/
 neg/
-*.flac
-*.avi
+
