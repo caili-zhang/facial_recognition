@@ -11,3 +11,5 @@
 
 *.jpg
 *.mp3
+dataSet/
+neg/
