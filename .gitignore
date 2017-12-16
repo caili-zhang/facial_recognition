@@ -13,3 +13,5 @@
 *.mp3
 dataSet/
 neg/
+*.flac
+*.avi
