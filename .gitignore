@@ -1,15 +1,4 @@
-# [書き方]
-#       行頭に # を書くとその行はコメントとみなされ、無視されます
-#       *.a         # .a ファイルは無視
-#       !lib.a          # しかし、lib.a ファイルだけは .a であっても追跡対象とします
-#       /TODO       # ルートディレクトリの TODO ファイルだけを無視し、サブディレクトリの TODO は無視しません
-#       build/      # build/ ディレクトリのすべてのファイルを無視します
-#       doc/*.txt   # doc/notes.txt は無視しますが、doc/server/arch.txt は無視しません
-# .gitignore ファイル自体は管理したい
-#       ! は、無視の打ち消し、すなわち無視しない
-
 !.gitignore
-
 *.flac
 *.avi
 *.jpg
