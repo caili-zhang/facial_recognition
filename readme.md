@@ -27,8 +27,7 @@ PS：この辺の依存関係結構重要，バージョンが違うと動かな
 - gTTS api，pip install gTTS 文字＝＞音声に変換する
 - pygame api, pip install pygame , 音声ファイルの操作
 
-2. 音声認識する，googole speech to text api を使う
-- google speech to text api, pip install Speech_Recognition 音声認識し，日本語に変換
-- pyaudio が必要，pip install pyaudio
-
-3. 会話のロジック：追加予定
+2．マルチスレッド機能追加，
+- メインスレッドは画面更新
+- サブスレッド１顔認識１秒１０回
+- サブスレッド２認識した名前を送信，発話する，１秒１回
