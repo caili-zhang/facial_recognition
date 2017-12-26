@@ -1,71 +1,70 @@
 # -*- coding: utf-8 -*-
 from gtts import gTTS
-import os,errno
-from pygame import mixer,time
-# from tempfile import TemporaryFile
+# import os,errno
+import pygame
+#import time
+#import threading
+# thread 機能追加、インスタンス生成したら、スレッド生成、時間間隔制御可能,無駄でした。。。。
+# speak 機能呼び出せるならいい
+# https://stackoverflow.com/questions/18416116/python-class-instance-starts-method-in-new-thread
+class jatts():
 
-
-class jatts:
     def __init__(self,words='こんにちわ',filename='temp.mp3'):
+
         self.filename = filename
         self.words=words
 
-    def silentremove(self):
-        try:
-            os.remove(self.filename)
-            print("delete {}".format(self.filename))
-        except OSError as e: # this would be "except OSError, e:" before Python 2.6
-            if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
-                raise # re-raise exception if a different error occurred
+    #t秒置きｎ回呼び出す
+    # def __init__(self,words='こんにちわ',filename='temp.mp3',t=5):
+    #     super(jatts, self).__init__()
+    #     self.cancelled = False
+    #     #self.daemon=True
+    #     self.filename = filename
+    #     self.words=words
+    #     self.t=t
+
+
+    # def run(self):
+    #     """Overloaded Thread.run, runs the update
+    #             method once per every 10 milliseconds."""
+    #     while not self.cancelled:
+    #         self.speak()
+    #         time.sleep(self.t)
+    #
+    # def cancel(self):
+    #     """End this timer thread"""
+    #     self.cancelled = True
+
+
+    # 使わなくても問題ない　なんで？？
+    # def silentremove(self):
+    #     try:
+    #         os.remove(self.filename)
+    #         print("delete {}".format(self.filename))
+    #     except OSError as e: # this would be "except OSError, e:" before Python 2.6
+    #         if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
+    #             raise # re-raise exception if a different error occurred
 
     def speak(self):
+        #self.silentremove()
         tts = gTTS(text=self.words, lang='ja')
-        # f=TemporaryFile()
-        # tts.write_to_fp(f)
-        tts.save('temp.mp3')
-        # f.close()
-        #subprocess.call("vlc -I rc --play-and-stop temp.mp3", shell=True)
 
+        tts.save(self.filename)
         # mixerモジュールの初期化
-        mixer.init()
+        pygame.mixer.init()
         # 音楽ファイルの読み込み
-
-        with open('temp.mp3', 'rb') as file_object:
-
-            mixer.music.load(file_object)
+        #print(threading.current_thread().getName())
+        with open(self.filename, 'rb') as file_object:
+            pygame.mixer.music.load(file_object)
             # 音楽再生、および再生回数の設定(-1はループ再生)
-            mixer.music.play(1)
-            # 再生の終了
-            while mixer.music.get_busy():
-                time.Clock().tick(10)
-            mixer.music.stop()
-            mixer.quit()
+            pygame.mixer.music.play(1)
+            # wait till the music end
+            while pygame.mixer.music.get_busy():
+                pygame.time.Clock().tick(10)
 
+            pygame.mixer.music.stop()
+            pygame.mixer.quit()
 
-
-# #　オブジェクト生成
-# speaker = jatts('あ')
-# #話す
-# speaker.speak()
-# speaker.silentremove()
-#
-# #　オブジェクト生成
-# speaker = jatts('ああ')
-# #話す
-# speaker.speak()
-# speaker.silentremove()
-#
-# #　オブジェクト生成
-# speaker = jatts('あああ')
-# #話す
-# speaker.speak()
-#
-# #　オブジェクト生成
-# speaker = jatts('あああ')
-# #話す
-# speaker.speak()
-#
-# #　オブジェクト生成
-# speaker = jatts('あああ')
-# #話す
+#　Threadオブジェクト生成
+# speaker = jatts("aaaa")
 # speaker.speak()
