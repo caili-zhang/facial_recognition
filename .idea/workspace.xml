@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b23ad0e-b2a5-45bb-9b88-a85c52372214" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/multiThread.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/multiThread.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faceDetector.py" afterPath="$PROJECT_DIR$/faceDetector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speech_api/jatts.py" afterPath="$PROJECT_DIR$/speech_api/jatts.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MVC.py" afterPath="$PROJECT_DIR$/test/MVC.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multi-process-bs.py" afterPath="$PROJECT_DIR$/test/multi-process-bs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multiProcessing.py" afterPath="$PROJECT_DIR$/test/multiProcessing.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observer_pattern.py" afterPath="$PROJECT_DIR$/test/observer_pattern.py" />
-    </list>
+    <list default="true" id="0b23ad0e-b2a5-45bb-9b88-a85c52372214" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -60,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jatts.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jatts.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/speech_api/jatts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="373">
+              <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
               <folding>
                 <element signature="e#24#45#0" expanded="true" />
               </folding>
@@ -595,26 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makeClassifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="23" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/speech_api/jatts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#24#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -638,6 +606,14 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/faceDetector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -651,11 +627,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/makeClassifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="875">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech_api/jatts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
