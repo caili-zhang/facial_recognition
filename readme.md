@@ -22,7 +22,7 @@ PS：この辺の依存関係結構重要，バージョンが違うと動かな
 2. makeClassifier.py　回して分類器をつくる
 3. faceDetector.pyを回して顔認識する
 
-## TODO
+## 追加機能（済）
 1. 挨拶機能追加，google text to speech api を使う
 - gTTS api，pip install gTTS 文字＝＞音声に変換する
 - pygame api, pip install pygame , 音声ファイルの操作
